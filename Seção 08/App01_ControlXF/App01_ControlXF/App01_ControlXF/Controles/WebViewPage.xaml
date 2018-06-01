@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControlXF.Controles.WebViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Entry x:Name="EnderecoSite" />
+                <Button x:Name="btnOk" Text="OK" Clicked="GoPagina" />
+                <Button x:Name="btnProximo" Text="Próximo" Clicked="GoProximo" />
+                <Button x:Name="btnVoltar" Text="Voltar" Clicked="GoVoltar" />
+            </StackLayout>
+            <WebView x:Name="Navegador"
+                     Source="https://www.cognum.com.br"
+                     Navigating="ActionCarregando"
+                     Navigated="ActionCarregado"
+                     
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="FillAndExpand">
+                
+            </WebView>
+            <Label x:Name="LblStatus" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

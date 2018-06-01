@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mod="clr-namespace:App01_ControlXF.Modelo"
+             x:Class="App01_ControlXF.Controles.ListViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type mod:Pessoa}">
+                        <mod:Pessoa Nome="Denis André de Godoi" Idade="44" />
+                        <mod:Pessoa Nome="Gabriel Corvini de Godoi" Idade="20" />
+                        <mod:Pessoa Nome="Gisele Cristina Corvini de Godoi" Idade="43" />
+                        <mod:Pessoa Nome="Denis André de Godoi - ano que vêm" Idade="45" />
+                        <mod:Pessoa Nome="Gabriel Corvini de Godoi - ano que vêm" Idade="21" />
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nome}" />
+                                <Label Text=" - " />
+                                <Label Text="{Binding Idade}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="Black"/>
+
+            <ListView x:Name="ListaPessoas" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="10" Orientation="Horizontal">
+                                <Label Text="{Binding Nome}" />
+                                <Label Text=" - " />
+                                <Label Text="{Binding Idade}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
