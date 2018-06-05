@@ -19,82 +19,98 @@ namespace App01_ControlXF.Menu
 
         private void GoActivityIndicatorPage(object sender, EventArgs e)
         {
-            Detail = new Controles.ActivityIndicatorPage();
+            Detail = new NavigationPage(new Controles.ActivityIndicatorPage());
+            IsPresented = false;
         }
 
         private void GoProgressBarPage(object sender, EventArgs e)
         {
-            Detail = new Controles.ProgressBarPage();
+            Detail = new NavigationPage(new Controles.ProgressBarPage());
+            IsPresented = false;
         }
 
         private void GoBoxViewPage(object sender, EventArgs e)
         {
-            Detail = new Controles.BoxViewPage();
+            Detail = new NavigationPage(new Controles.BoxViewPage());
+            IsPresented = false;
         }
 
         private void GoLabelPage(object sender, EventArgs e)
         {
-            Detail = new Controles.LabelPage();
+            Detail = new NavigationPage(new Controles.LabelPage());
+            IsPresented = false;
         }
 
         private void GoButtonPage(object sender, EventArgs e)
         {
-            Detail = new Controles.ButtonPage();
+            Detail = new NavigationPage(new Controles.ButtonPage());
+            IsPresented = false;
         }
 
         private void GoEntryEditorPage(object sender, EventArgs e)
         {
-            Detail = new Controles.EntryEditorPage();
+            Detail = new NavigationPage(new Controles.EntryEditorPage());
+            IsPresented = false;
         }
 
         private void GoDatePickerPage(object sender, EventArgs e)
         {
-            Detail = new Controles.DatePickerPage();
+            Detail = new NavigationPage(new Controles.DatePickerPage());
+            IsPresented = false;
         }
 
         private void GoTimePickerPage(object sender, EventArgs e)
         {
-            Detail = new Controles.TimePickerPage();
+            Detail = new NavigationPage(new Controles.TimePickerPage());
+            IsPresented = false;
         }
 
         private void GoPickerPage(object sender, EventArgs e)
         {
-            Detail = new Controles.PickerPage();
+            Detail = new NavigationPage(new Controles.PickerPage());
+            IsPresented = false;
         }
 
         private void GoSearchBarPage(object sender, EventArgs e)
         {
-            Detail = new Controles.SearchBarPage();
+            Detail = new NavigationPage(new Controles.SearchBarPage());
+            IsPresented = false;
         }
 
         private void GoSliderStepperPage(object sender, EventArgs e)
         {
-            Detail = new Controles.SliderSteperPage();
+            Detail = new NavigationPage(new Controles.SliderSteperPage());
+            IsPresented = false;
         }
 
         private void GoSwitchPage(object sender, EventArgs e)
         {
-            Detail = new Controles.SwitchPage();
+            Detail = new NavigationPage(new Controles.SwitchPage());
+            IsPresented = false;
         }
 
         private void GoImagePage(object sender, EventArgs e)
         {
-            Detail = new Controles.ImagePage();
+            Detail = new NavigationPage(new Controles.ImagePage());
+            IsPresented = false;
         }
 
         private void GoListViewPage(object sender, EventArgs e)
         {
-            Detail = new Controles.ListViewPage();
+            Detail = new NavigationPage(new Controles.ListViewPage());
+            IsPresented = false;
         }
 
         private void GoTableViewPage(object sender, EventArgs e)
         {
-            Detail = new Controles.TableView();
+            Detail = new NavigationPage(new Controles.TableView());
+            IsPresented = false;
         }
 
         private void GoWebViewPage(object sender, EventArgs e)
         {
-            Detail = new Controles.WebViewPage();
+            Detail = new NavigationPage(new Controles.WebViewPage());
+            IsPresented = false;
         }
     }
 }
